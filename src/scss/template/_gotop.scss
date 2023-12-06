@@ -1,0 +1,25 @@
+.go-top-wrap {
+    position: fixed;
+    z-index: 999;
+    bottom: 60px;
+    right: 3%;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(138, 138, 138, 0.726);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+    background-color: white;
+    span {
+        font-size: 16px;
+        color: #00a19d;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+    }
+    &.active {
+        position: absolute;
+        bottom: 235px;
+    }
+}

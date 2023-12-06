@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Rubik:wght@300;400&display=swap");
+
+// $imgPath: "http://192.168.0.7/James/202307-hscare/dist/images/";
+// $imgPath: "https://awp.womedge.com/Uploads/PG/demo-hscareTW/images/";
+// base 歸零 變數
+@import "base/reset";
+@import "base/variable";
+@import "base/mixin";
+
+// layout 共用
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+
+@import "template/animation";
+@import "template/contact";
+@import "template/gotop";
+@import "template/editor";
+@import "template/tag_menu";

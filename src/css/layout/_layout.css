@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: sourcehansans-tc;
+  letter-spacing: 0.05em;
+}
+body.fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
+  visibility: visible;
+}
+
+/*----------------------通用設定------------------------*/
+::-moz-selection {
+  color: white;
+  background: black;
+}
+::selection {
+  color: white;
+  background: black;
+}
+
+a {
+  outline: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+*:focus {
+  outline: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+html,
+body,
+* {
+  font-family: "Montserrat", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+html.loading,
+body.loading,
+*.loading {
+  opacity: 1;
+  visibility: visible;
+}
+html .asj,
+body .asj,
+* .asj {
+  opacity: 0;
+}
+
+@media all and (max-width: 991px) {
+  .pc {
+    display: none;
+  }
+}
+@media all and (min-width: 991px) {
+  .mb {
+    display: none;
+  }
+}
+.imgPng {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+/*----------------------共用樣式------------------------*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.mpsrel {
+  position: relative;
+}
+
+.bgcover {
+  width: 100%;
+  height: 0;
+  background: center/cover;
+}
+
+/*-------------------背景圖片 桌手機分開-----------------*/
+section {
+  position: relative;
+}
